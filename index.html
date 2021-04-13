@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Rain, Hail Or Shine</title>
+    <link rel="stylesheet" href="style.css" />
+    
+    <!--<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon" />-->
+    <link rel="icon" href="https://icons.iconarchive.com/icons/pixelkit/flat-jewels/128/Weather-icon.png">
+  </head>
+  <body>
+    <div id='header'>
+      <div id='headerLeft'>
+      <img src="https://icons.iconarchive.com/icons/pixelkit/flat-jewels/128/Weather-icon.png" id='icon'>
+    <h1 id='heading'>Rain, Hail Or Shine</h1>
+  </div>
+  <div id='headerRight'>
+    <input type='text' placeholder="Melbourne, AU..." id='cityInput'>
+    <button id='search'>Search</button>
+  </div>
+    </div>
+
+    <div id="dayContainer">
+      <div id='leftDayContainer'>
+    <p id="name"></p>
+    <img id='iconNow'>
+    <p id="temp"></p>
+    </div>
+    
+    <div id='rightDayContainer'>
+    <p id="max" class="dayDetails"></p>
+    <p id="min" class="dayDetails"></p>
+    <p id="feelsLike" class="dayDetails"></p>
+    <p id="chanceRain" class="dayDetails"></p>
+    <p id="wind" class="dayDetails"></p>
+    <p id="uv" class="dayDetails"></p>
+  </div>
+  </div>
+
+    <div id="weekContainer">
+<!-- day, description, icon, temp, chance of rain-->
+<div id="forecastDays" class="forecast"></div>
+<div id="forecastIcon" class="forecast"></div>
+<div id="forecastTemp" class="forecast"></div>
+<!--<div id="forecastRain" class="forecast"></div>-->
+<div id="forecastDescription" class="forecast"></div>
+
+
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
