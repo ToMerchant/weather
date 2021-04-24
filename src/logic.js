@@ -73,7 +73,7 @@ async function getDaily(lat, lon) {
 
 
     chanceRain.innerText =
-        "Chance of rain: " + Math.round(dailyData.daily[0].pop) + "%, ";
+        "Chance of rain: " + (dailyData.daily[0].pop * 100) + "%";
     uv.innerText = "UV index: " + dailyData.daily[0].uvi;
 
     for (let i = 1; i < 8; i++) {
